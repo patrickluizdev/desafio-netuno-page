@@ -1,0 +1,39 @@
+*{
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+
+.flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+/* @mixin boundaries($isAuto:true) {
+    width: 90%;
+    max-width: 980px;
+    @if $isAuto {
+        margin: auto;
+    }
+}
+
+@function set-text-color($color) {
+    @if lightness($color)>70 {
+        @return #333;
+    }
+    @else {
+        @return #FFFF;
+    }
+}
+
+
+
+*/

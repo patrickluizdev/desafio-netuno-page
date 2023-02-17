@@ -1,0 +1,81 @@
+/**/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Orbitron:wght@500&family=Unbounded:wght@300&display=swap");
+* {
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.flexCenter, header .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* @mixin boundaries($isAuto:true) {
+    width: 90%;
+    max-width: 980px;
+    @if $isAuto {
+        margin: auto;
+    }
+}
+
+@function set-text-color($color) {
+    @if lightness($color)>70 {
+        @return #333;
+    }
+    @else {
+        @return #FFFF;
+    }
+}
+
+
+
+*/
+header {
+  background-color: #1A7FBD;
+}
+header .container {
+  justify-content: space-between;
+  width: 80%;
+  height: 10vh;
+  margin: auto;
+}
+header img {
+  width: 17vh;
+}
+header ul {
+  display: flex;
+}
+header ul li {
+  margin: 1vh;
+}
+header ul a {
+  text-decoration: none;
+  color: #FFF;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  transition: all 300ms linear 0s;
+}
+header ul a:hover {
+  font-weight: 900;
+  opacity: 0.8;
+}
+header button {
+  width: 15vh;
+  height: 4vh;
+  border-radius: 1vh;
+  border-style: none;
+  color: #FFF;
+  background-color: #000;
+  font-weight: 700;
+  transition: all 300ms linear 0s;
+}
+header button:hover {
+  background-color: #A4DCFF;
+  color: #000;
+  opacity: 0.9;
+}
+
+/*FONTE*//*# sourceMappingURL=main.css.map */

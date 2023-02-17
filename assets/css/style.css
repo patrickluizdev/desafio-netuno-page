@@ -1,0 +1,15 @@
+
+
+
+
+
+/*HEADER*/
+
+body header div{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    width: 80vw;
+    height: 10vh;
+}
+

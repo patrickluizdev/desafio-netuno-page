@@ -1,0 +1,46 @@
+header {
+    background-color: $color-blue;
+    .container {
+        @extend .flexCenter;
+        justify-content: space-between;
+        width: 80%;
+        height: 10vh;
+        margin: auto;
+
+    }
+    img {
+        width: 17vh;
+    }
+    ul {
+        display: flex;
+        li{
+            margin: 1vh;
+        }
+        a {
+            text-decoration: none;
+            color: $color-withe;
+            text-transform: capitalize;
+            font-size: 0.8rem;
+            transition: all 300ms linear 0s;
+            &:hover {
+                font-weight: 900;
+                opacity: 0.8;
+        }
+        }
+    }
+    button{
+        width: 15vh;
+        height: 4vh;
+        border-radius: 1vh;
+        border-style: none;
+        color: $color-withe;
+        background-color: $color-black;
+        font-weight: 700;
+        transition: all 300ms linear 0s;
+        &:hover {
+            background-color: $color-blue-l;
+            color: $color-black;
+            opacity: 0.9;
+        }
+    }
+}
