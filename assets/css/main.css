@@ -1,5 +1,6 @@
-/**/
+/*FONTE*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Orbitron:wght@500&family=Unbounded:wght@300&display=swap");
+/**/
 * {
   font-family: "Noto Sans", sans-serif;
   margin: 0;
@@ -7,10 +8,14 @@
   list-style: none;
 }
 
-.flexCenter, footer, main .span-white .jornada, main .span-white .problema, main .span-blue .projeto, main, header .container, header {
+.flexCenter, .card div, footer, main .span-white .jornada .top-jornada, main .span-white .jornada, main .span-white .problema, main .span-blue .projeto, main .span-blue .cadastro, main, header .container, header {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.space {
+  padding-top: 1vh;
 }
 
 /* @mixin boundaries($isAuto:true) {
@@ -91,44 +96,37 @@ header span {
 main {
   flex-direction: column;
 }
+main p {
+  font-size: 1.5vh;
+  font-weight: 540;
+}
 main .span-blue {
   background-color: #1A7FBD;
   width: 100%;
 }
 main .span-blue .cadastro {
-  height: 90vh;
+  height: 80vh;
 }
-main .span-blue .cadastro .img {
-  background-attachment: fixed;
-  background-position: right center;
-  background-size: cover;
-  width: 50vw;
-  align-items: start;
-  justify-content: center;
+main .span-blue .cadastro .div-img {
+  max-height: 100%;
 }
 main .span-blue .projeto {
   width: 80vw;
-  height: 50vh;
+  height: 60vh;
   flex-direction: row;
   margin: auto;
 }
-main .span-blue .projeto .dev {
+main .span-blue .projeto img {
   width: 40vh;
 }
-main .span-blue .projeto .intro {
+main .span-blue .projeto .intro-projeto {
   flex-direction: column;
   padding-left: 5vw;
   color: #FFF;
 }
-main .span-blue .projeto .intro h1 {
+main .span-blue .projeto .intro-projeto h1 {
   color: #A4DCFF;
   font-size: 3vh;
-}
-main .span-blue .projeto .intro p {
-  font-size: 1.5vh;
-}
-main .span-blue .projeto .intro .space {
-  padding-top: 1vh;
 }
 main .span-white {
   background-color: #FFF;
@@ -137,14 +135,60 @@ main .span-white {
 main .span-white .problema {
   width: 80vw;
   height: 100vh;
+  flex-direction: column;
+  margin: auto;
+  margin-top: -15vh;
+}
+main .span-white .problema .intro-problema {
+  display: flex;
   flex-direction: row;
   margin: auto;
+}
+main .span-white .problema .intro-problema img {
+  width: 40vh;
+}
+main .span-white .problema .intro-problema article {
+  margin-top: 7vh;
+  margin-left: 7vh;
+  color: #000;
+}
+main .span-white .problema .intro-problema article h1 {
+  background: linear-gradient(to right, #1A7FBD, #A4DCFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  font-size: xx-large;
+}
+main .span-white .problema .intro-problema article h2 {
+  font-size: large;
+  font-weight: 900;
+}
+main .span-white .problema .intro-problema article div {
+  width: 100%;
+  height: 0.1vh;
+  margin-top: 2.5vh;
+  margin-bottom: 2.5vh;
+  background-color: #000;
+  opacity: 0.2;
 }
 main .span-white .jornada {
   width: 80vw;
   height: 80vh;
-  flex-direction: row;
+  justify-content: flex-start;
+  flex-direction: column;
   margin: auto;
+}
+main .span-white .jornada .top-jornada h1 {
+  font-size: 3vw;
+  background: linear-gradient(to right, #1A7FBD, #A4DCFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  width: 20vw;
+  text-align: center;
+}
+main .span-white .jornada .top-jornada .inverter {
+  transform: scaleX(-1);
 }
 /* #form {
         width: 100%;
@@ -216,4 +260,27 @@ footer {
   margin: auto;
 }
 
-/*FONTE*//*# sourceMappingURL=main.css.map */
+.card {
+  display: flex;
+  z-index: 1;
+  margin: auto;
+  margin-top: -29vh;
+}
+.card div {
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-left: 0.4vh;
+  margin-right: 0.4vh;
+  background-color: #FFF;
+  width: 26vw;
+  height: 20vh;
+  border-radius: 2vh;
+  box-shadow: 0vh 2vh 4vh -2vh #000;
+}
+.card div h2 {
+  padding-top: 10%;
+}
+.card div p {
+  padding: 5%;
+  text-align: center;
+}/*# sourceMappingURL=main.css.map */
