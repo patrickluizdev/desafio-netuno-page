@@ -110,6 +110,9 @@ main .span-blue .cadastro {
 main .span-blue .cadastro .div-img {
   max-height: 100%;
 }
+main .span-blue .cadastro .div-img img {
+  max-width: 100%;
+}
 main .span-blue .projeto {
   width: 80vw;
   height: 60vh;
@@ -232,7 +235,7 @@ main .span-white .jornada .top-jornada .inverter {
         font-size: 1.6rem;
     }
 */
-.form {
+.form1 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -243,11 +246,11 @@ main .span-white .jornada .top-jornada .inverter {
   border-radius: 2vh;
   padding: 2vw;
 }
-.form div h2 {
+.form1 div h2 {
   font-size: larger;
   opacity: 0.5;
 }
-.form div h3 {
+.form1 div h3 {
   color: #1A7FBD;
   font-size: small;
   font-weight: 800;
@@ -283,4 +286,24 @@ footer {
 .card div p {
   padding: 5%;
   text-align: center;
+}
+
+.card-jornada {
+  display: flex;
+  z-index: 1;
+  margin-top: 5vh;
+}
+.card-jornada .card-11 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 30vw;
+  height: 8vh;
+  border-radius: 1vh;
+  box-shadow: 0vh 1vh 2vh -1vh #000;
+}
+.card-jornada .card-11 .img {
+  height: 80%;
+  background-color: #FFF;
+  width: 20%;
 }/*# sourceMappingURL=main.css.map */
