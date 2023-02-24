@@ -2,6 +2,7 @@ main{
     @extend .flexCenter;
     background-color: $color-blue;
     width: 100%;
+    max-width: 100%;
     flex-direction: column;
     p{
         font-weight: 540;

@@ -1,6 +1,5 @@
 .card{
     display: flex;
-    z-index: 1;
     margin: auto;
     @extend .flexCenter;
     h2{
@@ -24,6 +23,7 @@
         p{
             padding: 5%;
             text-align: center;
+
         }
     }
 }

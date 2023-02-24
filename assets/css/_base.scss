@@ -3,9 +3,22 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    p a{
+    p {
         font-size: 1.5vh;
     }
+    p::first-letter {
+        text-transform: capitalize;
+    }
+    a{
+        font-size: 1.5vh;
+        text-decoration: none;
+        color: $color-white;
+    }
+
+    a::first-letter {
+        text-transform: capitalize;
+    }
+
     
     h1{
         font-size: 3.5vh;
