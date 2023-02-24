@@ -262,7 +262,9 @@ footer {
   height: 25vh;
   margin: auto;
 }
-
+footer p {
+  color: #FFF;
+}
 .card {
   display: flex;
   z-index: 1;

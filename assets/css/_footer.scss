@@ -4,4 +4,11 @@ footer{
     height: 25vh;
     @extend .flexCenter;
     margin: auto;
+    p{
+        color: $color-white;
+    }
+    .soc{
+        
+    }
+
 }

@@ -23,7 +23,7 @@ header {
         }
         a {
             text-decoration: none;
-            color: $color-withe;
+            color: $color-white;
             text-transform: capitalize;
             font-size: 1.8vh;
             transition: all 300ms linear 0s;
@@ -42,7 +42,7 @@ header {
     span{
         width: 100%;
         height: 0.3vh;
-        background-image: linear-gradient(to right, transparent 3%, $color-withe, transparent 97%);
+        background-image: linear-gradient(to right, transparent 3%, $color-white, transparent 97%);
     }
 }
 

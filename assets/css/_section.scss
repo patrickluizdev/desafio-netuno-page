@@ -8,7 +8,7 @@ main{
     }
 
     .span-white{
-        background-color: $color-withe;
+        background-color: $color-white;
         width: 100%;
         
         .problema{
@@ -119,7 +119,7 @@ main{
         .intro-projeto{
             flex-direction: column;
             padding-left: 5vw;
-            color: $color-withe;
+            color: $color-white;
             h1{
                 color: $color-blue-l;
             }
@@ -132,7 +132,7 @@ main{
         @extend .flexCenter;
         flex-direction: column;
         h1{
-            color: $color-withe;
+            color: $color-white;
             font-weight: 900;
             padding-top: 5%;
         }
