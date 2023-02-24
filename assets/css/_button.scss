@@ -1,0 +1,17 @@
+.btn{
+    border-radius: 1vh;
+    border-style: none;
+    background-color: $color-black;
+    font-weight: 700;
+    transition: all 900ms linear 0s;
+    font-size: 1.8vh;
+    &:hover {
+        background-color: $color-blue-l;
+        color: $color-black;
+        opacity: 0.9;
+    }
+    a{
+        text-decoration: none;
+        color: $color-withe;
+    }
+}

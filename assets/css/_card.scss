@@ -30,21 +30,38 @@
     display: flex;
     z-index: 1;
     margin-top: 5vh;
-    .card-11{
+
+    .card-blue{
         display: flex;
         flex-direction: row;
         align-items: center;
-        width: 30vw;
-        height: 8vh;
+        background-color: $color-blue;
         border-radius: 1vh;
         box-shadow: 0vh 1vh 2vh -1vh $color-black;
+        width: 32vh;
+        height: 8vh;
+        margin: 1vh;
+        margin-bottom: 2vh;
 
-        .img{
-            height: 80%;
+        div{
             background-color: $color-withe;
-            width: 20%;
+            margin: 1rem;
+            padding: 1vh;
+            height: 40%;
+            width: 15%;
+            border-radius: 1vh;
+            @extend .flexCenter;
         }
-    }
-    
+        img{
+            height: 70%;
+            width: 70%;
+        }
+        p{
+            color: $color-withe;
+        }
+    }    
 }
+
+
+
 

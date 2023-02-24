@@ -2,13 +2,11 @@ main{
     @extend .flexCenter;
     flex-direction: column;
     p{
-        font-size: 1.5vh;
         font-weight: 540;
     }
     .span-blue{
         background-color: $color-blue;
         width: 100%;
-
         .cadastro{
             height: 80vh;
             @extend .flexCenter;
@@ -16,12 +14,9 @@ main{
                 max-height: 100%;
                 img{
                     max-width: 100%;
-                    //position: absolute;
                 }
             }
-
             form{
-
             }
         }
     
@@ -41,7 +36,6 @@ main{
                 color: $color-withe;
                 h1{
                     color: $color-blue-l;
-                    font-size: 3vh;
                 }
             }
         }
@@ -75,10 +69,8 @@ main{
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
                         font-weight: 900;
-                        font-size: xx-large;
                     }
                     h2{
-                        font-size: large;
                         font-weight: 900;
                     }
                     div{
@@ -95,7 +87,7 @@ main{
 
         .jornada{
             width: 80vw;
-            height: 80vh;
+            height: 70vh;
             @extend .flexCenter;
             justify-content: flex-start;
             flex-direction: column;
@@ -103,25 +95,33 @@ main{
             .top-jornada{
                 @extend .flexCenter;
                 h1{
-                    font-size: 3vw;
-                    background: linear-gradient(to right, $color-blue, $color-blue-l);
+                    background: linear-gradient(to right, $color-blue, $color-blue-l );
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     font-weight: 900;
                     width: 20vw;
                     text-align: center;
-
                 }
                 .inverter{
                     transform: scaleX(-1);
                 }
             }
+            .cadastro{
+                @extend .flexCenter;
+                justify-content: space-around;   
+                margin-top: 6vh;
+                height: 6vh;
+                width: 50vw;
+                max-width: 50vh;
+            }
+            .vetor2{
+                margin-top: 2vh ;
+                align-items: flex-end;
+            }
         }
     }
 
     .span-blue-l{
-
-
 
 
 
