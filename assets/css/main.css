@@ -31,7 +31,7 @@
   font-size: 1vh;
 }
 
-.flexCenter, footer .btn, main .objetivos, main .projeto, main .cadastro .formulario, main .span-white .jornada .cadastro, main .span-white .jornada .top-jornada, main .span-white .jornada, main .span-white .problema, main, header .button, header .container, header, .card-jornada .card-blue div, .card div, .card {
+.flexCenter, footer .btn, main .objetivos, main .projeto, main .cadastro .formulario, main .cadastro, main .span-white .jornada .cadastro, main .span-white .jornada .top-jornada, main .span-white .jornada, main .span-white .problema, main, header .button, header .container, header, .card-jornada .card-blue div, .card div, .card {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -247,18 +247,9 @@ main .span-white .jornada .vetor2 {
 }
 main .cadastro {
   height: 100vh;
-  max-width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-}
-main .cadastro .div-img {
-  justify-content: flex-start;
-}
-main .cadastro .div-img img {
-  max-width: 100%;
-  max-height: 100%;
-  transform: translateX(-15%);
+  width: 100%;
+  background: url(../img/bannertopo.png) no-repeat -10vw;
+  background-size: contain;
 }
 main .cadastro .formulario {
   position: absolute;
@@ -266,7 +257,8 @@ main .cadastro .formulario {
   max-height: 60%;
   height: 75%;
   width: 30%;
-  right: 6%;
+  min-width: 40vh;
+  right: 8%;
   top: 15%;
 }
 main .cadastro .formulario::before {
@@ -274,7 +266,7 @@ main .cadastro .formulario::before {
   position: absolute;
   inset: 0;
   border-radius: 3vh;
-  border: 0.2rem solid transparent;
+  border: 0.2vw solid transparent;
   background: linear-gradient(45deg, #FFF, transparent, transparent, #FFF) border-box;
   -webkit-mask: linear-gradient(#FFF 0 0), padding-box linear-gradient(#FFF 0 0);
   -webkit-mask-composite: xor;
@@ -354,10 +346,11 @@ form {
   margin: 1rem;
   height: 93%;
   width: 90%;
+  max-height: 90vh;
   background-color: #FFF;
   padding: 2%;
   z-index: 1;
-  border-radius: 1rem;
+  border-radius: 1vw;
   box-shadow: 0rem 0rem 0.5rem 0rem #000;
 }
 form div h2 {

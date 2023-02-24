@@ -2,10 +2,13 @@ form {
     margin: 1rem;
     height: 93%;
     width: 90%;
+
+    max-height: 90vh;
+    
     background-color: $color-white;
     padding: 2%;
     z-index: 1;
-    border-radius: 1rem;
+    border-radius: 1vw;
     box-shadow: 0rem 0rem 0.5rem 0rem $color-black;
 
     div h2{
