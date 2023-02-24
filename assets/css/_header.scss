@@ -22,10 +22,7 @@ header {
             margin: 1vh;
         }
         a {
-            text-decoration: none;
             color: $color-white;
-            text-transform: capitalize;
-            font-size: 1.8vh;
             transition: all 300ms linear 0s;
             &:hover {
                 font-weight: 900;
@@ -41,7 +38,7 @@ header {
     }
     span{
         width: 100%;
-        height: 0.3vh;
+        height: 0.1rem;
         background-image: linear-gradient(to right, transparent 3%, $color-white, transparent 97%);
     }
 }
