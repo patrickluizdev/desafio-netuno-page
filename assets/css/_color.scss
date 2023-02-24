@@ -2,3 +2,5 @@ $color-blue: #1A7FBD;
 $color-blue-l: #A4DCFF;
 $color-black: #000;
 $color-white: #FFF;
+
+$color-border: linear-gradient(to left top , transparent 30%, $color-white, transparent 70%);
