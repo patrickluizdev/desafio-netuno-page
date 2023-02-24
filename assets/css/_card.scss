@@ -5,7 +5,6 @@
     h2{
         text-transform: capitalize;
     }
-
     div{
         @extend .flexCenter;
         justify-content: flex-start;
@@ -23,7 +22,6 @@
         p{
             padding: 5%;
             text-align: center;
-
         }
     }
 }
@@ -32,7 +30,6 @@
     display: flex;
     z-index: 1;
     margin-top: 5vh;
-
     .card-blue{
         display: flex;
         flex-direction: row;
@@ -44,7 +41,6 @@
         height: 8vh;
         margin: 1vh;
         margin-bottom: 2vh;
-
         div{
             background-color: $color-white;
             margin: 1rem;
