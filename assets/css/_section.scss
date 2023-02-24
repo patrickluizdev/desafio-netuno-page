@@ -95,15 +95,34 @@ main{
 
 
     .cadastro{
-        height: 80vh;
-        @extend .flexCenter;
+        height: 100%;
+        width:100% ;
+        display: flex;
+        justify-content: flex-end;
+        //align-items: flex-start;
+
         .div-img{
-            max-height: 100%;
             img{
-                max-width: 100%;
+                height: 95%;
+                transform: translateX(-5%);
             }
         }
-        form{
+        .formulario{
+            position: absolute;
+            height: 90%;
+            width: 30%;
+            margin-right: 5%;
+            margin-top: 5%;
+            border: 0.1rem solid;
+            border-image: linear-gradient(to left top , transparent 30%, $color-white, transparent 70%);
+            border-image-slice: 1;
+            border-radius: 1rem;
+
+
+
+
+
+
         }
     }
 

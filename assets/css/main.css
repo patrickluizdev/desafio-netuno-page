@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  text-decoration: none;
 }
 * p {
   font-size: 1.5vh;
@@ -15,7 +16,6 @@
 }
 * a {
   font-size: 1.5vh;
-  text-decoration: none;
   color: #FFF;
 }
 * a::first-letter {
@@ -31,7 +31,7 @@
   font-size: 1vh;
 }
 
-.flexCenter, footer .btn, main .objetivos, main .projeto, main .cadastro, main .span-white .jornada .cadastro, main .span-white .jornada .top-jornada, main .span-white .jornada, main .span-white .problema, main, header .button, header .container, header, .card-jornada .card-blue div, .card div, .card {
+.flexCenter, footer .btn, main .objetivos, main .projeto, main .span-white .jornada .cadastro, main .span-white .jornada .top-jornada, main .span-white .jornada, main .span-white .problema, main, header .button, header .container, header, .card-jornada .card-blue div, .card div, .card {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -246,13 +246,26 @@ main .span-white .jornada .vetor2 {
   align-items: flex-end;
 }
 main .cadastro {
-  height: 80vh;
-}
-main .cadastro .div-img {
-  max-height: 100%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 main .cadastro .div-img img {
-  max-width: 100%;
+  height: 95%;
+  transform: translateX(-5%);
+}
+main .cadastro .formulario {
+  position: absolute;
+  height: 90%;
+  width: 30%;
+  margin-right: 5%;
+  margin-top: 5%;
+  border: 0.1rem solid;
+  -o-border-image: linear-gradient(to left top, transparent 30%, #FFF, transparent 70%);
+     border-image: linear-gradient(to left top, transparent 30%, #FFF, transparent 70%);
+  border-image-slice: 1;
+  border-radius: 1rem;
 }
 main .projeto {
   width: 80vw;
@@ -324,24 +337,17 @@ main .objetivos h1 {
         font-size: 1.6rem;
     }
 */
-.form1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  height: 65vh;
-  width: 30vw;
-  background-color: #FFF;
-  border-radius: 2vh;
-  padding: 2vw;
+form {
+  margin: auto;
+  height: 99%;
+  width: 99%;
+  z-index: 1100;
 }
-.form1 div h2 {
-  font-size: larger;
+form div h2 {
   opacity: 0.5;
 }
-.form1 div h3 {
+form div h3 {
   color: #1A7FBD;
-  font-size: small;
   font-weight: 800;
 }
 

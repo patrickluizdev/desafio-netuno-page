@@ -1,23 +1,17 @@
-.form1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: 65vh;
-    width: 30vw;
-    background-color: $color-white;
-    border-radius: 2vh;
-    padding: 2vw;
+form {
+    margin: auto;
+    height: 99%;
+    width: 99%;
+    z-index: 1100;
 
     div h2{
-        font-size: larger;
         opacity: 0.5;
     }
     div h3{
         color: $color-blue;
-        font-size: small;
         font-weight: 800;
     }
+
 
 
 

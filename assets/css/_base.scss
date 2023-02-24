@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    text-decoration: none;
     p {
         font-size: 1.5vh;
     }
@@ -11,7 +12,6 @@
     }
     a{
         font-size: 1.5vh;
-        text-decoration: none;
         color: $color-white;
     }
 
