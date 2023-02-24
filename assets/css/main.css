@@ -11,7 +11,7 @@
   font-size: 1.5vh;
 }
 * h1 {
-  font-size: 3vh;
+  font-size: 3.5vh;
 }
 * h2 {
   font-size: 2vh;
@@ -20,7 +20,7 @@
   font-size: 1vh;
 }
 
-.flexCenter, .card-jornada .card-blue div, .card div, footer, main .span-white .jornada .cadastro, main .span-white .jornada .top-jornada, main .span-white .jornada, main .span-white .problema, main .span-blue .projeto, main .span-blue .cadastro, main, header .button, header .container, header {
+.flexCenter, .card-jornada .card-blue div, .card div, .card, footer, main .objetivos, main .projeto, main .cadastro, main .span-white .jornada .cadastro, main .span-white .jornada .top-jornada, main .span-white .jornada, main .span-white .problema, main, header .button, header .container, header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,26 +30,6 @@
   padding-top: 1vh;
 }
 
-/* @mixin boundaries($isAuto:true) {
-    width: 90%;
-    max-width: 980px;
-    @if $isAuto {
-        margin: auto;
-    }
-}
-
-@function set-text-color($color) {
-    @if lightness($color)>70 {
-        @return #333;
-    }
-    @else {
-        @return #FFFF;
-    }
-}
-
-
-
-*/
 header {
   background-color: #1A7FBD;
   flex-direction: column;
@@ -96,40 +76,12 @@ header span {
 }
 
 main {
+  background-color: #1A7FBD;
+  width: 100%;
   flex-direction: column;
 }
 main p {
   font-weight: 540;
-}
-main .span-blue {
-  background-color: #1A7FBD;
-  width: 100%;
-}
-main .span-blue .cadastro {
-  height: 80vh;
-}
-main .span-blue .cadastro .div-img {
-  max-height: 100%;
-}
-main .span-blue .cadastro .div-img img {
-  max-width: 100%;
-}
-main .span-blue .projeto {
-  width: 80vw;
-  height: 60vh;
-  flex-direction: row;
-  margin: auto;
-}
-main .span-blue .projeto img {
-  width: 40vh;
-}
-main .span-blue .projeto .intro-projeto {
-  flex-direction: column;
-  padding-left: 5vw;
-  color: #FFF;
-}
-main .span-blue .projeto .intro-projeto h1 {
-  color: #A4DCFF;
 }
 main .span-white {
   background-color: #FFF;
@@ -172,9 +124,12 @@ main .span-white .problema .intro-problema article div {
   background-color: #000;
   opacity: 0.2;
 }
+main .span-white .problema .card {
+  margin-top: -25vh;
+}
 main .span-white .jornada {
   width: 80vw;
-  height: 70vh;
+  height: 60vh;
   justify-content: flex-start;
   flex-direction: column;
   margin: auto;
@@ -192,7 +147,7 @@ main .span-white .jornada .top-jornada .inverter {
 }
 main .span-white .jornada .cadastro {
   justify-content: space-around;
-  margin-top: 6vh;
+  margin-top: 5vh;
   height: 6vh;
   width: 50vw;
   max-width: 50vh;
@@ -201,6 +156,43 @@ main .span-white .jornada .vetor2 {
   margin-top: 2vh;
   align-items: flex-end;
 }
+main .cadastro {
+  height: 80vh;
+}
+main .cadastro .div-img {
+  max-height: 100%;
+}
+main .cadastro .div-img img {
+  max-width: 100%;
+}
+main .projeto {
+  width: 80vw;
+  height: 60vh;
+  flex-direction: row;
+  margin: auto;
+}
+main .projeto img {
+  width: 40vh;
+}
+main .projeto .intro-projeto {
+  flex-direction: column;
+  padding-left: 5vw;
+  color: #FFF;
+}
+main .projeto .intro-projeto h1 {
+  color: #A4DCFF;
+}
+main .objetivos {
+  width: 80vw;
+  height: 40vh;
+  flex-direction: column;
+}
+main .objetivos h1 {
+  color: #FFF;
+  font-weight: 900;
+  padding-top: 5%;
+}
+
 /* #form {
         width: 100%;
         background: $primary-color;
@@ -275,7 +267,9 @@ footer {
   display: flex;
   z-index: 1;
   margin: auto;
-  margin-top: -29vh;
+}
+.card h2 {
+  text-transform: capitalize;
 }
 .card div {
   justify-content: flex-start;
@@ -289,7 +283,7 @@ footer {
   box-shadow: 0vh 2vh 4vh -2vh #000;
 }
 .card div h2 {
-  padding-top: 10%;
+  padding-top: 5%;
 }
 .card div p {
   padding: 5%;

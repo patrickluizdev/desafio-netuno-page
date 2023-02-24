@@ -2,7 +2,10 @@
     display: flex;
     z-index: 1;
     margin: auto;
-    margin-top: -29vh;
+    @extend .flexCenter;
+    h2{
+        text-transform: capitalize;
+    }
 
     div{
         @extend .flexCenter;
@@ -16,12 +19,11 @@
         border-radius: 2vh;
         box-shadow: 0vh 2vh 4vh -2vh $color-black;
         h2{
-            padding-top: 10%;
+            padding-top: 5%;
         }
         p{
             padding: 5%;
             text-align: center;
-            
         }
     }
 }
