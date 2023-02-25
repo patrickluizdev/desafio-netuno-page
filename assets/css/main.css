@@ -219,8 +219,9 @@ main .cadastro .formulario {
   height: 75%;
   width: 30%;
   min-width: 40vh;
-  right: 8%;
+  right: 10%;
   top: 15%;
+  z-index: 1000;
 }
 main .cadastro .formulario::before {
   content: "";
@@ -234,11 +235,18 @@ main .cadastro .formulario::before {
           mask-composite: exclude;
 }
 main .cadastro .vector {
+  display: flex;
+  justify-content: flex-end;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+main .cadastro .vector img {
   position: absolute;
-  height: 20%;
-  width: 50%;
-  z-index: 1000;
-  border-radius: 45% 55% 47% 53%/80% 55% 45% 20%;
+  height: 30%;
+  width: 11.5%;
+  top: 52.8%;
 }
 main .projeto {
   width: 80%;
@@ -395,6 +403,8 @@ form .form-dados div .input-form {
   margin-bottom: 5%;
 }
 form .form-dados div .input-form .ico {
+  height: 3%;
+  width: 6%;
   position: absolute;
   left: 10%;
 }
@@ -611,6 +621,7 @@ footer .btn {
   width: 12vw;
   height: 5vh;
   box-shadow: none;
+  text-align: center;
 }
 footer .btn a {
   color: #000;

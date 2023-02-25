@@ -54,6 +54,7 @@ footer{
         height: 5vh;
         @extend .flexCenter;
         box-shadow: none;
+        text-align: center;
         a{
             color: $color-black;
             &:hover{
