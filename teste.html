@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        label {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+input[type="text"] {
+  border: 1px solid black;
+  padding: 10px;
+  width: 200px;
+}
+
+img {
+  position: absolute;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  filter: brightness(50%);
+}
+
+
+select {
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+}
+
+option {
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+}
+    </style>
+
+<label for="meuInput">
+    <input type="text" id="meuInput">
+    <img src="caminho/da/minha/imagem.jpg" alt="Minha imagem">
+  </label>
+
+  <select>
+    <option value="1">Opção 1</option>
+    <option value="2">Opção 2</option>
+    <option value="3">Opção 3</option>
+  </select>
+  
+
+  <select>
+    <option value="value1">Valor 1</option>
+    <option value="value2" selected>Valor 2</option>
+    <option value="value3">Valor 3</option>
+  </select>
+  
+  <style>
+    option:checked {
+      opacity: 0.5;
+    }
+  </style>
+    
+</body>
+</html>
