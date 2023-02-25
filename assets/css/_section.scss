@@ -1,93 +1,9 @@
 main{
     @extend .flexCenter;
     background-color: $color-blue;
-    max-width: 100%;
     flex-direction: column;
     p{
         font-weight: 540;
-    }
-
-    .span-white{
-        background-color: $color-white;
-        width: 100%;
-        
-        .problema{
-            width: 80vw;
-            height: 100vh;
-            @extend .flexCenter;
-            flex-direction: column;
-            margin: auto;
-            margin-top: -15vh;
-
-            .intro-problema{
-                display: flex;
-                flex-direction: row;
-                margin: auto;
-                img{
-                    width: 40vh;
-                }
-                article{
-                    margin-top: 7vh;
-                    margin-left: 7vh;
-                    color: $color-black;
-                    h1{
-                        background: linear-gradient(to right, $color-blue, $color-blue-l);
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                        font-weight: 900;
-                    }
-                    h2{
-                        font-weight: 900;
-                    }
-                    div{
-                        width: 100%;
-                        height: 0.1vh;
-                        margin-top: 2.5vh;
-                        margin-bottom: 2.5vh;
-                        background-color: $color-black;
-                        opacity: .2;
-                    }
-                }
-            }
-            .card{
-                margin-top: -25%;
-            }
-        }
-
-        .jornada{
-            width: 80vw;
-            height: 60vh;
-            @extend .flexCenter;
-            justify-content: flex-start;
-            flex-direction: column;
-            margin: auto;
-            .top-jornada{
-                @extend .flexCenter;
-                h1{
-                    background: linear-gradient(to right, $color-blue, $color-blue-l );
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    font-weight: 900;
-                    width: 20vw;
-                    text-align: center;
-                }
-                .inverter{
-                    transform: scaleX(-1);
-                }
-            }
-            .cadastro{
-                @extend .flexCenter;
-                justify-content: space-around;   
-                margin-top: 5vh;
-                height: 6vh;
-                width: 50vw;
-                max-width: 50vh;
-            }
-            .vetor2{
-                margin-top: 2vh ;
-                align-items: flex-end;
-            }
-        }
     }
 
     .cadastro{
@@ -129,17 +45,30 @@ main{
     }
 
     .projeto{
-        width: 80vw;
+        width: 80%;
         height: 60vh;
         @extend .flexCenter;
         flex-direction: row;
-        margin: auto;
-        img{
-            width: 40vh;
+        flex-wrap: wrap;
+        margin-top: -5%;
+        justify-content: flex-start;
+        .img-dev{
+            position: relative;
+            left: 0;
+            top: 0;
+            width: 40%;
+            height: 60%;
+            background: url(../img/dev.png) no-repeat;
+            background-size: contain ;
         }
         .intro-projeto{
+            position: absolute;
+            right: 10%;
+
+            max-width: 40%;
+            min-width: 30%;
             flex-direction: column;
-            padding-left: 5vw;
+            padding-left: 5%;
             color: $color-white;
             h1{
                 color: $color-blue-l;
@@ -147,9 +76,109 @@ main{
         }
     }
 
+    .problema{
+        background-color: $color-white;   
+        flex-direction: column;
+        height: 80vh;
+        margin: auto;
+        @extend .flexCenter;
+
+        
+
+        .intro-problema{
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            @extend .flexCenter;
+            height: 80vh;
+            .woman{
+                position: relative;
+                left: 0%;
+                top: 0%;
+                width: 100%;
+                height: 100%;
+                background: url(../img/Container2.png) no-repeat;
+                background-size: contain ;
+            }
+            article{
+                display: flex;
+                flex-direction: column;
+                width: 40%;
+                min-width: 35vw;
+                height: 60%;
+                margin: auto;
+                h1{
+                    background: linear-gradient(to right, $color-blue, $color-blue-l);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-weight: 900;
+                    height: 15%;
+                }
+                h2{
+                    font-weight: 900;
+                    height: 15%;
+
+                }
+                div{
+                    width: 100%;
+                    height: 0.1vh;
+                    background-color: $color-black;
+                    opacity: .2;
+                    margin-top: 8%;
+                    margin-bottom: 5%;
+                }
+            }
+        }
+        .card{
+            position: relative;
+            margin-top: -15%;
+        }
+    }
+
+    .jornada{
+        background-color: $color-white;
+        width: 100%;
+        min-height: 80vh;
+        @extend .flexCenter;
+        justify-content: center;
+        flex-direction: column;
+        .top-jornada{
+            max-width: 60%;
+            @extend .flexCenter;
+            img{
+               // background-color: black;
+                width: 50%;
+            }
+            h1{
+                background: linear-gradient(to right, $color-blue, $color-blue-l );
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-weight: 900;
+                min-width: 30%;
+                text-align: center;
+            }
+            .inverter{
+                transform: scaleX(-1);
+            }
+        }
+        .btn-cadastro{
+            @extend .flexCenter;
+            justify-content: space-around;   
+            margin-top: 5vh;
+            height: 6vh;
+            width: 50vw;
+            max-width: 50vh;
+            text-align: center;
+        }
+        .vetor2{
+            margin-top: 2vh ;
+            align-items: flex-end;
+        }
+    }
+
     .objetivos{
         width: 80vw;
-        height: 40vh;
+        height: 60vh;
         @extend .flexCenter;
         flex-direction: column;
         h1{

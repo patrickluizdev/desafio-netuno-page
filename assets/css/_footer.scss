@@ -1,5 +1,6 @@
 footer{
     background-color: $color-black;
+    width: 100%;
     .span-black{
         height: 30vh;
         width: 80%;
@@ -22,10 +23,14 @@ footer{
         opacity: 0.8;
     }
     .soc{
+        .logo-slogan{
+            width: 80%;
+            height: 80%;
+        }
         ul{
             display: flex;
             flex-direction: row;
-            width: 20%;
+            width: 20vw;
             li{
                 padding: 0.5rem;
                 width: 2rem;

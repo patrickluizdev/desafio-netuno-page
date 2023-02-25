@@ -4,10 +4,9 @@ header {
     flex-direction: column;
     .container {
         @extend .flexCenter;
-        justify-content: space-between;
+        justify-content: space-around;
         width: 80%;
         height: 10vh;
-        margin: auto;
     }
     img {
         width: 17vh;
@@ -16,25 +15,42 @@ header {
             width: 17.3vh;
         }
     }
-    ul {
+    nav{
         display: flex;
-        li{
-            margin: 1vh;
+        flex-wrap: wrap;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            li{
+                margin: 1vh;
+                margin-right: 2vw;
+                text-align: center;
+            }
+            a {
+                color: $color-white;
+                transition: all 300ms linear 0s;
+
+                &:hover {
+                    font-weight: 900;
+                    opacity: 0.8;
+                    //SETAR 800 px de largura para virar hamburguer
+            }
+            }
         }
-        a {
-            color: $color-white;
-            transition: all 300ms linear 0s;
-            &:hover {
-                font-weight: 900;
-                opacity: 0.8;
-        }
-        }
+        
     }
+
     .button{
         @extend .flexCenter;
         width: 17vw;
         max-width: 15rem;
         height: 5vh;
+        min-height: 20%;
+        text-align: center;
     }
     span{
         width: 100%;
