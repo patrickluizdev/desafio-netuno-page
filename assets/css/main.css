@@ -314,7 +314,6 @@ form {
   background-color: #FFF;
   z-index: 1;
   border-radius: 1vw;
-  box-shadow: 0rem 0rem 0.5rem 0rem #000;
   flex-direction: column;
 }
 form .form-dados {
