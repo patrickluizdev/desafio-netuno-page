@@ -14,7 +14,7 @@
 ![](https://raw.githubusercontent.com/patrickluizdev/desafio-netuno-page/main/assets/img/Netuno%20Page%20-%20Fasters%20-%20127.0.0.1.png?token=GHSAT0AAAAAAB2K46CRJQ7PLIMXDL5ZPI7YY72UTMQ)
 
 
-###  Mobile Version
+##  Mobile Version
 ![](https://raw.githubusercontent.com/patrickluizdev/desafio-netuno-page/main/assets/img/Netuno%20Page%20-%20Fasters%20-%20Respansive.png)
 
 
