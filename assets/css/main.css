@@ -1,6 +1,10 @@
 /*FONTE*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Orbitron:wght@500&family=Unbounded:wght@300&display=swap");
 /**/
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   font-family: "Noto Sans", sans-serif;
   margin: 0;
