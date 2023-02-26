@@ -1,0 +1,91 @@
+
+@media screen and (max-width: 800px) {
+    main{
+        .projeto{
+            height: 50vh;
+            justify-content: center;
+            .img-dev{
+                width: 0;
+            }
+            .intro-projeto{
+                text-align: center; 
+                min-width: 80%;
+                padding-left: 0;
+                font-size: 2vh;
+            }
+        }
+
+        .problema{
+            height: auto;
+            .intro-problema{
+                text-align: center;
+                height: 50vh;
+                .woman{
+                    width: 0%;
+                }
+                article{
+                    width: 80%;
+                    height: auto;
+                }
+            }
+            .card{
+                flex-direction: column;
+                margin-top: 0;
+                div{
+                    width: 80%;
+                    margin: 4%;
+                }                
+            }
+        }
+
+        .jornada{
+            padding-top: 15%;
+            padding-bottom: 10% ;
+            height: auto;
+            .top-jornada{
+                img{
+                    width: 0;
+                }
+            }
+            .card-jornada{
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                .card-blue{
+                    align-items: center;
+                    justify-content: center;
+                    width: 80%;
+                    margin: auto;
+                    margin-top: 5%;
+                    div{
+                        width: 0;
+                        height: 0;
+                    }
+                    img{
+                        width: 0;
+                        height: 0;
+                    }     
+                }           
+            }
+        }
+        .objetivos{
+            height: auto;
+            padding-top: 10%;
+            padding-bottom: 10%;
+            .card{
+                flex-direction: column;
+                margin-top: 0;
+                div{
+                    width: 80%;
+                    margin: 4%;
+                }          
+            }
+        }
+
+        .card{
+            h2{
+                font-size: 2vh;
+            }
+        }
+    }
+}

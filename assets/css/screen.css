@@ -1,0 +1,10 @@
+@media screen and (max-width: 800px) {
+  .projeto .img-dev {
+    width: 0%;
+  }
+  .projeto .intro-projeto {
+    width: 40%;
+    flex-direction: column;
+    padding-left: 5%;
+  }
+}/*# sourceMappingURL=screen.css.map */

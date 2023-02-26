@@ -48,6 +48,7 @@ body {
 .card {
   display: flex;
   margin: auto;
+  min-height: 50vh;
 }
 .card h2 {
   text-transform: capitalize;
@@ -280,59 +281,62 @@ main .projeto .intro-projeto h1 {
 main .problema {
   background-color: #FFF;
   flex-direction: column;
-  height: 80vh;
+  height: 100vh;
   margin: auto;
 }
 main .problema .intro-problema {
   width: 80%;
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   height: 80vh;
 }
 main .problema .intro-problema .woman {
-  position: relative;
-  left: 0%;
-  top: 0%;
-  width: 100%;
+  width: 50%;
   height: 100%;
+  background-position: center;
+  background-color: bisque;
   background: url(../img/Container2.png) no-repeat;
   background-size: contain;
 }
 main .problema .intro-problema article {
+  position: absolute;
   display: flex;
   flex-direction: column;
   width: 40%;
-  min-width: 35vw;
-  height: 60%;
-  margin: auto;
+  height: 60vh;
+  margin-top: 5%;
+  right: 10%;
 }
 main .problema .intro-problema article h1 {
   background: linear-gradient(to right, #1A7FBD, #A4DCFF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
-  height: 15%;
+  min-height: 10%;
 }
 main .problema .intro-problema article h2 {
   font-weight: 900;
-  height: 15%;
+  min-height: 15%;
 }
 main .problema .intro-problema article div {
   width: 100%;
   height: 0.1vh;
   background-color: #000;
   opacity: 0.2;
-  margin-top: 8%;
+  margin-top: 5%;
   margin-bottom: 5%;
 }
 main .problema .card {
+  width: 80%;
   position: relative;
   margin-top: -15%;
 }
 main .jornada {
   background-color: #FFF;
   width: 100%;
-  min-height: 80vh;
+  min-height: 60vh;
   justify-content: center;
   flex-direction: column;
 }
@@ -454,13 +458,14 @@ form .form-tec {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 form .form-tec h2 {
   color: #FFF;
   font-size: 1.4vh;
   width: 100%;
   margin-left: 5%;
-  margin-top: 5%;
+  margin-top: 1%;
 }
 form .form-tec label {
   display: flex;
@@ -470,6 +475,7 @@ form .form-tec label {
   justify-content: space-around;
   margin-left: 2%;
   font-size: 1.2vh;
+  align-items: center;
 }
 form .form-tec label input {
   -webkit-appearance: none;
@@ -514,12 +520,14 @@ form .form-group .boolean {
   padding-bottom: 7%;
   width: 100%;
   flex-direction: row;
+  align-items: center;
 }
 form .form-group .boolean label {
   display: flex;
   flex-direction: row;
   padding-right: 1vw;
   width: 15%;
+  align-items: center;
 }
 form .form-group .boolean label input {
   all: unset;
@@ -533,8 +541,6 @@ form .form-group .boolean label input {
 }
 form .form-group .boolean label input:checked {
   background-color: #1A7FBD;
-  border-radius: 0.3rem;
-  border: 0.2rem solid #FFF;
 }
 form .form-group .mark {
   height: 0.1rem;
@@ -640,4 +646,86 @@ footer div ul li {
 }
 footer .contato p {
   margin-top: 10%;
+}
+
+@media screen and (max-width: 800px) {
+  main .projeto {
+    height: 50vh;
+    justify-content: center;
+  }
+  main .projeto .img-dev {
+    width: 0;
+  }
+  main .projeto .intro-projeto {
+    text-align: center;
+    min-width: 80%;
+    padding-left: 0;
+    font-size: 2vh;
+  }
+  main .problema {
+    height: auto;
+  }
+  main .problema .intro-problema {
+    text-align: center;
+    height: 50vh;
+  }
+  main .problema .intro-problema .woman {
+    width: 0%;
+  }
+  main .problema .intro-problema article {
+    width: 80%;
+    height: auto;
+  }
+  main .problema .card {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  main .problema .card div {
+    width: 80%;
+    margin: 4%;
+  }
+  main .jornada {
+    padding-top: 15%;
+    padding-bottom: 10%;
+    height: auto;
+  }
+  main .jornada .top-jornada img {
+    width: 0;
+  }
+  main .jornada .card-jornada {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  main .jornada .card-jornada .card-blue {
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+  }
+  main .jornada .card-jornada .card-blue div {
+    width: 0;
+    height: 0;
+  }
+  main .jornada .card-jornada .card-blue img {
+    width: 0;
+    height: 0;
+  }
+  main .objetivos {
+    height: auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  main .objetivos .card {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  main .objetivos .card div {
+    width: 80%;
+    margin: 4%;
+  }
+  main .card h2 {
+    font-size: 2vh;
+  }
 }/*# sourceMappingURL=main.css.map */

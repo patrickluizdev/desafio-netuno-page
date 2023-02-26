@@ -74,7 +74,6 @@ main{
         .intro-projeto{
             position: absolute;
             right: 10%;
-
             max-width: 40%;
             min-width: 30%;
             flex-direction: column;
@@ -86,60 +85,61 @@ main{
         }
     }
 
+
     .problema{
         background-color: $color-white;   
         flex-direction: column;
-        height: 80vh;
+        height: 100vh;
         margin: auto;
         @extend .flexCenter;
-
-        
 
         .intro-problema{
             width: 80%;
             display: flex;
             flex-direction: row;
             @extend .flexCenter;
+            justify-content: flex-start;
+            align-items: center;
             height: 80vh;
             .woman{
-                position: relative;
-                left: 0%;
-                top: 0%;
-                width: 100%;
+                width: 50%;
                 height: 100%;
+                background-position: center;
+                background-color: bisque;
                 background: url(../img/Container2.png) no-repeat;
                 background-size: contain ;
             }
             article{
+                position: absolute;
                 display: flex;
                 flex-direction: column;
                 width: 40%;
-                min-width: 35vw;
-                height: 60%;
-                margin: auto;
+                height: 60vh;
+                margin-top: 5%;
+                right: 10%;
                 h1{
                     background: linear-gradient(to right, $color-blue, $color-blue-l);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     font-weight: 900;
-                    height: 15%;
+                    min-height: 10%;
                 }
                 h2{
                     font-weight: 900;
-                    height: 15%;
-
+                    min-height: 15%;
                 }
                 div{
                     width: 100%;
                     height: 0.1vh;
                     background-color: $color-black;
                     opacity: .2;
-                    margin-top: 8%;
+                    margin-top: 5%;
                     margin-bottom: 5%;
                 }
             }
         }
         .card{
+            width: 80%;
             position: relative;
             margin-top: -15%;
         }
@@ -148,7 +148,7 @@ main{
     .jornada{
         background-color: $color-white;
         width: 100%;
-        min-height: 80vh;
+        min-height: 60vh;
         @extend .flexCenter;
         justify-content: center;
         flex-direction: column;
@@ -156,7 +156,6 @@ main{
             max-width: 60%;
             @extend .flexCenter;
             img{
-               // background-color: black;
                 width: 50%;
             }
             h1{
