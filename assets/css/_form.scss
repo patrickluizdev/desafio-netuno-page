@@ -7,6 +7,7 @@ form {
     border-radius: 1vw;
     @extend .flexCenter;
     flex-direction: column;
+
     .form-dados{
         font-size: 1.1vh;
         height: 35%;
@@ -101,8 +102,12 @@ form {
                 outline: none;
                 cursor: pointer;
                 margin-right: -15%;
+                border-radius: 0.2rem;
+
                 &:checked {
                     background-color: $color-white;
+                    border-radius: 0.1rem;
+
                 }
             }
         }
@@ -140,16 +145,19 @@ form {
                     padding-right: 1vw;
                     width: 15%;
                     input{
-                        appearance: none;
+                        all:unset;
                         width: 1rem;
                         height: 1rem;
                         border: 0.1rem solid $color-blue;
-                        border-radius: 5%;
-                        outline: none;
+                        border-radius: 0.2rem;
+
                         cursor: pointer;
                         margin-right: 8%;
+                        position: relative;
                         &:checked {
-                            background-color: $color-white;
+                            background-color: $color-blue;
+                            border-radius: 0.3rem;
+                            border: 0.2rem solid $color-white;
                         }
                     }   
                 }

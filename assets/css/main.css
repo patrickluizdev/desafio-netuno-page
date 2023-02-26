@@ -484,9 +484,11 @@ form .form-tec label input {
   outline: none;
   cursor: pointer;
   margin-right: -15%;
+  border-radius: 0.2rem;
 }
 form .form-tec label input:checked {
   background-color: #FFF;
+  border-radius: 0.1rem;
 }
 form .form-tec .item8, form .form-tec .item3 {
   min-width: 30%;
@@ -520,19 +522,19 @@ form .form-group .boolean label {
   width: 15%;
 }
 form .form-group .boolean label input {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  all: unset;
   width: 1rem;
   height: 1rem;
   border: 0.1rem solid #1A7FBD;
-  border-radius: 5%;
-  outline: none;
+  border-radius: 0.2rem;
   cursor: pointer;
   margin-right: 8%;
+  position: relative;
 }
 form .form-group .boolean label input:checked {
-  background-color: #FFF;
+  background-color: #1A7FBD;
+  border-radius: 0.3rem;
+  border: 0.2rem solid #FFF;
 }
 form .form-group .mark {
   height: 0.1rem;
