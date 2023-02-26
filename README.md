@@ -1,4 +1,4 @@
-# Projeto-Netuno
+# Projeto Netuno
 
 ## 2º Desafio do projeto Netuno 2023
 
