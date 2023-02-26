@@ -46,11 +46,11 @@ header {
             text-align: center;
         }
         .menu{
+            display: none;
             padding: 2%;
             text-align: center;
             border-radius: 15%;
             border: 0.1rem solid $color-blue-l;
-            
             &:hover{
                 border: 0.1rem solid $color-blue;
                 background-color: $color-blue-l;
@@ -58,6 +58,7 @@ header {
             }
         }
         .menu-arrow{
+            display: none;
             z-index: 1000;
             padding: 1%;
             text-align: center;
