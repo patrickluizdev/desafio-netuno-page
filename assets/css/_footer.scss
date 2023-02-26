@@ -15,6 +15,9 @@ footer{
     }
     a{
         text-decoration: none;
+        &:hover{
+            font-weight: 800;
+        }
     }
     span{
         width: 0.1rem;
@@ -26,6 +29,10 @@ footer{
         .logo-slogan{
             width: 80%;
             height: 80%;
+            &:hover{
+                width: 82%;
+
+            }
         }
         ul{
             display: flex;

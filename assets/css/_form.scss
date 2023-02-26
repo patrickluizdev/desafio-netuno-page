@@ -8,7 +8,7 @@ form {
     @extend .flexCenter;
     flex-direction: column;
 
-    .form-dados{
+    .form-data{
         font-size: 1.1vh;
         height: 35%;
         width: 90%;
@@ -41,12 +41,16 @@ form {
                         font-weight: bold;
                         text-align: start;
                         opacity: 0.5;
+                        &:last-letter {
+                            color: blue;
+                        }
                     }
                     &:focus {
                         outline: none;
                         box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.5);
                     }
                     option:checked {
+                        background-color: $color-blue-l;
                         font-weight: bold;
                         text-align: start;
                         opacity: 0.5;
@@ -180,7 +184,7 @@ form {
                 font-size: 1vh;
                 margin-bottom: 10%;
             }
-            .termos{
+            .term{
                 margin-top: 5%;
                 width: 80%;
                 p{
@@ -196,13 +200,21 @@ form {
 
 
             }
-            .enviar{
+            .send{
                 height: 20%;
                 width: 100%;
                 background-color: $color-blue;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
+                &:hover{
+                    background-color: $color-blue-l;
+                    border: 0.1rem solid $color-blue;
+                    a{
+                        color: $color-blue;
+                    }
+                }
             }
 
 
