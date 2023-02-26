@@ -31,7 +31,7 @@
   font-size: 1vh;
 }
 
-.flexCenter, footer .btn, form .form-group, form .form-dados div .input-form, form .form-dados div, form, main .objetivos, main .jornada .btn-cadastro, main .jornada .top-jornada, main .jornada, main .problema .intro-problema, main .problema, main .projeto, main .cadastro .formulario, main .cadastro, main, header .button, header .container, header, .card-jornada .card-blue div, .card div, .card {
+.flexCenter, footer .btn, form .form-group, form .form-dados div .input-form, form .form-dados div, form, main .goals, main .journey .btn-register, main .journey .top-journey, main .journey, main .problem .intro-problem, main .problem, main .project, main .register .block-form, main .register, main, header .button, header .container, header, .card-journey .card-blue div, .card div, .card {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,12 +79,12 @@ body {
   max-height: 90%;
 }
 
-.card-jornada {
+.card-journey {
   display: flex;
   margin-top: 5%;
   justify-content: center;
 }
-.card-jornada .card-blue {
+.card-journey .card-blue {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -96,7 +96,7 @@ body {
   margin: 1vh;
   margin-bottom: 5%;
 }
-.card-jornada .card-blue div {
+.card-journey .card-blue div {
   background-color: #FFF;
   margin: 3%;
   padding: 2%;
@@ -104,11 +104,11 @@ body {
   width: 15%;
   border-radius: 1vh;
 }
-.card-jornada .card-blue img {
+.card-journey .card-blue img {
   max-height: 70%;
   max-width: 70%;
 }
-.card-jornada .card-blue p {
+.card-journey .card-blue p {
   color: #FFF;
 }
 
@@ -199,17 +199,6 @@ header span {
   height: 0.1rem;
   background-image: linear-gradient(to right, transparent 3%, #FFF, transparent 97%);
 }
-header .hamburguer {
-  display: none;
-  cursor: pointer;
-}
-header .hamburguer .ham {
-  width: 30px;
-  height: 3px;
-  background-color: #333;
-  margin: 5px 0;
-  transition: all 0.3s ease-in-out;
-}
 
 main {
   background-color: #1A7FBD;
@@ -218,13 +207,13 @@ main {
 main p {
   font-weight: 540;
 }
-main .cadastro {
+main .register {
   height: 100vh;
   width: 100%;
   background: url(../img/bannertopo.png) no-repeat -10vw;
   background-size: contain;
 }
-main .cadastro .formulario {
+main .register .block-form {
   position: absolute;
   max-width: 70%;
   max-height: 80%;
@@ -235,7 +224,7 @@ main .cadastro .formulario {
   top: 15%;
   z-index: 1000;
 }
-main .cadastro .formulario::before {
+main .register .block-form::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -246,7 +235,7 @@ main .cadastro .formulario::before {
   -webkit-mask-composite: xor;
           mask-composite: exclude;
 }
-main .cadastro .vector {
+main .register .vector {
   display: flex;
   justify-content: flex-end;
   left: 0;
@@ -254,13 +243,13 @@ main .cadastro .vector {
   width: 100%;
   z-index: 1;
 }
-main .cadastro .vector img {
+main .register .vector img {
   position: absolute;
   height: 30%;
   width: 11.5%;
-  top: 52.8%;
+  top: 52.65%;
 }
-main .projeto {
+main .project {
   width: 80%;
   height: 60vh;
   flex-direction: row;
@@ -268,7 +257,7 @@ main .projeto {
   margin-top: -5%;
   justify-content: flex-start;
 }
-main .projeto .img-dev {
+main .project .img-dev {
   position: relative;
   left: 0;
   top: 0;
@@ -277,7 +266,7 @@ main .projeto .img-dev {
   background: url(../img/dev.png) no-repeat;
   background-size: contain;
 }
-main .projeto .intro-projeto {
+main .project .intro-project {
   position: absolute;
   right: 10%;
   max-width: 40%;
@@ -286,16 +275,16 @@ main .projeto .intro-projeto {
   padding-left: 5%;
   color: #FFF;
 }
-main .projeto .intro-projeto h1 {
+main .project .intro-project h1 {
   color: #A4DCFF;
 }
-main .problema {
+main .problem {
   background-color: #FFF;
   flex-direction: column;
   height: 100vh;
   margin: auto;
 }
-main .problema .intro-problema {
+main .problem .intro-problem {
   width: 80%;
   display: flex;
   flex-direction: row;
@@ -303,7 +292,7 @@ main .problema .intro-problema {
   align-items: center;
   height: 80vh;
 }
-main .problema .intro-problema .woman {
+main .problem .intro-problem .woman {
   width: 50%;
   height: 100%;
   background-position: center;
@@ -311,7 +300,7 @@ main .problema .intro-problema .woman {
   background: url(../img/Container2.png) no-repeat;
   background-size: contain;
 }
-main .problema .intro-problema article {
+main .problem .intro-problem article {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -320,18 +309,18 @@ main .problema .intro-problema article {
   margin-top: 5%;
   right: 10%;
 }
-main .problema .intro-problema article h1 {
+main .problem .intro-problem article h1 {
   background: linear-gradient(to right, #1A7FBD, #A4DCFF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
   min-height: 10%;
 }
-main .problema .intro-problema article h2 {
+main .problem .intro-problem article h2 {
   font-weight: 900;
   min-height: 15%;
 }
-main .problema .intro-problema article div {
+main .problem .intro-problem article div {
   width: 100%;
   height: 0.1vh;
   background-color: #000;
@@ -339,25 +328,25 @@ main .problema .intro-problema article div {
   margin-top: 5%;
   margin-bottom: 5%;
 }
-main .problema .card {
+main .problem .card {
   width: 80%;
   position: relative;
   margin-top: -15%;
 }
-main .jornada {
+main .journey {
   background-color: #FFF;
   width: 100%;
   min-height: 60vh;
   justify-content: center;
   flex-direction: column;
 }
-main .jornada .top-jornada {
+main .journey .top-journey {
   max-width: 60%;
 }
-main .jornada .top-jornada img {
+main .journey .top-journey img {
   width: 50%;
 }
-main .jornada .top-jornada h1 {
+main .journey .top-journey h1 {
   background: linear-gradient(to right, #1A7FBD, #A4DCFF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -365,10 +354,10 @@ main .jornada .top-jornada h1 {
   min-width: 30%;
   text-align: center;
 }
-main .jornada .top-jornada .inverter {
+main .journey .top-journey .inverter {
   transform: scaleX(-1);
 }
-main .jornada .btn-cadastro {
+main .journey .btn-register {
   justify-content: space-around;
   margin-top: 5vh;
   height: 6vh;
@@ -376,16 +365,16 @@ main .jornada .btn-cadastro {
   max-width: 50vh;
   text-align: center;
 }
-main .jornada .vetor2 {
+main .journey .vetor2 {
   margin-top: 2vh;
   align-items: flex-end;
 }
-main .objetivos {
+main .goals {
   width: 80vw;
   height: 60vh;
   flex-direction: column;
 }
-main .objetivos h1 {
+main .goals h1 {
   color: #FFF;
   font-weight: 900;
   padding-top: 5%;
@@ -663,67 +652,61 @@ footer .contato p {
   header .container nav {
     display: none;
   }
-  header .separador {
+  header .separator {
     width: 100%;
   }
-  main .cadastro {
+  main .register {
     height: 90vh;
   }
-  main .cadastro .formulario {
-    margin-top: 10%;
-  }
-  main .cadastro .vector img {
-    display: none;
-  }
-  main .projeto {
+  main .project {
     height: 50vh;
     justify-content: center;
   }
-  main .projeto .img-dev {
+  main .project .img-dev {
     display: none;
   }
-  main .projeto .intro-projeto {
+  main .project .intro-project {
     text-align: center;
     min-width: 80%;
     padding-left: 0;
     font-size: 2vh;
   }
-  main .problema {
+  main .problem {
     height: auto;
   }
-  main .problema .intro-problema {
+  main .problem .intro-problem {
     text-align: center;
     height: 50vh;
   }
-  main .problema .intro-problema .woman {
+  main .problem .intro-problem .woman {
     display: none;
   }
-  main .problema .intro-problema article {
+  main .problem .intro-problem article {
     width: 80%;
     height: auto;
   }
-  main .problema .card {
+  main .problem .card {
     flex-direction: column;
     margin-top: 0;
   }
-  main .problema .card div {
+  main .problem .card div {
     width: 80%;
     margin: 4%;
   }
-  main .jornada {
+  main .journey {
     padding-top: 15%;
     padding-bottom: 10%;
     height: auto;
   }
-  main .jornada .top-jornada img {
+  main .journey .top-journey img {
     display: none;
   }
-  main .jornada .card-jornada {
+  main .journey .card-journey {
     display: flex;
     flex-direction: column;
     padding: 0;
   }
-  main .jornada .card-jornada .card-blue {
+  main .journey .card-journey .card-blue {
     align-items: center;
     justify-content: center;
     width: 80%;
@@ -731,24 +714,24 @@ footer .contato p {
     margin-top: 5%;
     padding: 2%;
   }
-  main .jornada .card-jornada .card-blue div {
+  main .journey .card-journey .card-blue div {
     width: 0;
     height: 0;
   }
-  main .jornada .card-jornada .card-blue img {
+  main .journey .card-journey .card-blue img {
     width: 0;
     height: 0;
   }
-  main .objetivos {
+  main .goals {
     height: auto;
     padding-top: 5%;
     padding-bottom: 10%;
   }
-  main .objetivos .card {
+  main .goals .card {
     flex-direction: column;
     margin-top: 0;
   }
-  main .objetivos .card div {
+  main .goals .card div {
     width: 80%;
     margin: 4%;
   }

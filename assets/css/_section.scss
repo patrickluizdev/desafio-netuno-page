@@ -6,13 +6,13 @@ main{
         font-weight: 540;
     }
 
-    .cadastro{
+    .register{
         height: 100vh;
         width:100% ;
         @extend .flexCenter;
         background: url(../img/bannertopo.png) no-repeat -10vw;
         background-size: contain ;
-        .formulario{
+        .block-form{
             @extend .flexCenter;
             position: absolute;
             max-width: 70%;
@@ -41,17 +41,17 @@ main{
             left: 0;
             height: 100%;
             width: 100%;
-            z-index: 1;
+            z-index: 1;           
             img{
                 position: absolute;
                 height: 30%;
                 width: 11.5%;
-                top: 52.8%;
+                top: 52.65%;
             }
         }
     }
 
-    .projeto{
+    .project{
         width: 80%;
         height: 60vh;
         @extend .flexCenter;
@@ -68,7 +68,7 @@ main{
             background: url(../img/dev.png) no-repeat;
             background-size: contain ;
         }
-        .intro-projeto{
+        .intro-project{
             position: absolute;
             right: 10%;
             max-width: 40%;
@@ -83,14 +83,14 @@ main{
     }
 
 
-    .problema{
+    .problem{
         background-color: $color-white;   
         flex-direction: column;
         height: 100vh;
         margin: auto;
         @extend .flexCenter;
 
-        .intro-problema{
+        .intro-problem{
             width: 80%;
             display: flex;
             flex-direction: row;
@@ -142,14 +142,14 @@ main{
         }
     }
 
-    .jornada{
+    .journey{
         background-color: $color-white;
         width: 100%;
         min-height: 60vh;
         @extend .flexCenter;
         justify-content: center;
         flex-direction: column;
-        .top-jornada{
+        .top-journey{
             max-width: 60%;
             @extend .flexCenter;
             img{
@@ -167,7 +167,7 @@ main{
                 transform: scaleX(-1);
             }
         }
-        .btn-cadastro{
+        .btn-register{
             @extend .flexCenter;
             justify-content: space-around;   
             margin-top: 5vh;
@@ -182,7 +182,7 @@ main{
         }
     }
 
-    .objetivos{
+    .goals{
         width: 80vw;
         height: 60vh;
         @extend .flexCenter;
