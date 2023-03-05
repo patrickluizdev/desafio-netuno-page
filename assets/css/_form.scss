@@ -201,7 +201,8 @@ form {
 
             }
             .send{
-                height: 20%;
+                max-height: 20%;
+                min-height: 6vh;
                 width: 100%;
                 background-color: $color-blue;
                 display: flex;

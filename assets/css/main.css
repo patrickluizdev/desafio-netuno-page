@@ -620,7 +620,8 @@ form .form-group .term a {
   opacity: 1;
 }
 form .form-group .send {
-  height: 20%;
+  max-height: 20%;
+  min-height: 6vh;
   width: 100%;
   background-color: #1A7FBD;
   display: flex;
