@@ -32,11 +32,12 @@
         .separator{
             width: 100%;
         }
+
     }
 
     main{
         .register{
-            height: 100vh;
+            height: 85vh;
             .vector{
                 img{
                     display: block;
@@ -140,6 +141,9 @@
             }
             .nav{
                 display: none;
+            }
+            .contato{
+                padding-left: 5%;
             }
         }
     }

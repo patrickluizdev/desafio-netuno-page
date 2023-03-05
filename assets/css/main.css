@@ -290,8 +290,9 @@ main .register .vector {
 main .register .vector img {
   position: absolute;
   height: 30%;
-  width: 11.5%;
-  top: 52.65%;
+  width: 13%;
+  top: 52.9%;
+  z-index: -100;
 }
 main .project {
   width: 80%;
@@ -429,7 +430,7 @@ form {
   width: 94%;
   max-height: 90vh;
   background-color: #FFF;
-  z-index: 1;
+  z-index: 1000;
   border-radius: 1vw;
   flex-direction: column;
 }
@@ -745,7 +746,7 @@ footer .contato p {
     width: 100%;
   }
   main .register {
-    height: 100vh;
+    height: 85vh;
   }
   main .register .vector img {
     display: block;
@@ -835,5 +836,8 @@ footer .contato p {
   }
   footer .span-black .nav {
     display: none;
+  }
+  footer .span-black .contato {
+    padding-left: 5%;
   }
 }/*# sourceMappingURL=main.css.map */
